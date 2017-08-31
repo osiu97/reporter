@@ -29,6 +29,7 @@ import (
 	"github.com/izakmarais/reporter"
 	"github.com/izakmarais/reporter/grafana"
 )
+import "unicode/utf8"
 
 var proto = flag.String("proto", "http://", "Grafana Protocol")
 var ip = flag.String("ip", "localhost:3000", "Grafana IP and port")
