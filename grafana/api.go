@@ -116,11 +116,11 @@ func (g client) getPanelURL(p Panel, dashName string, t TimeRange) string {
 	v.Add("from", t.From)
 	v.Add("to", t.To)
 	if p.IsSingleStat() {
-		v.Add("width", "300")
-		v.Add("height", "150")
+		v.Add("width", "600")
+		v.Add("height", "300")
 	} else {
-		v.Add("width", "1000")
-		v.Add("height", "500")
+		v.Add("width", "1200")
+		v.Add("height", "600")
 	}
 
 	url := fmt.Sprintf("%s/render/dashboard-solo/db/%s?%s", g.url, dashName, v.Encode())
